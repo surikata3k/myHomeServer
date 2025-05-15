@@ -1,0 +1,14 @@
+name: myspeed
+services:
+    myspeed:
+        ports:
+            - 5216:5216
+        volumes:
+            - myspeed:/myspeed/data
+        restart: unless-stopped
+        container_name: MySpeed
+        image: germannewsmaker/myspeed
+volumes:
+    myspeed:
+        external: false
+        name: myspeed

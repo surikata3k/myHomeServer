@@ -1,0 +1,10 @@
+name: minidlna
+services:
+    minidlna:
+        network_mode: host
+        volumes:
+            - /server/multimedia:/media
+        environment:
+            - MINIDLNA_MEDIA_DIR=/media
+            - MINIDLNA_FRIENDLY_NAME=firulai
+        image: vladgh/minidlna

@@ -1,0 +1,16 @@
+services:
+  filebrowser:
+    container_name: File-Browser
+    image: filebrowser/filebrowser
+    healthcheck:
+     test: curl -f http://localhost:80/ || exit 1
+    mem_limit: 6g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    restart: on-failure:5
+    ports:
+      - 8147:80
+    volumes:
+      - /server:/srv
+     # - /volume1/docker/filebrowser/config/database.db:/database.db:rw
