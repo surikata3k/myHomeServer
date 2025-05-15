@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Server Dashboard</title>
+  <style>
+    body { font-family: sans-serif; background: #f0f2f5; padding: 2rem; }
+    h1 { text-align: center; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card a {
+      display: block;
+      color: #0366d6;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Docker Dashboard</h1>
+  <div class="container">
+    <div class="card">
+      <div>samba</div>
+      <a href="http://192.168.219.152:445" target="_blank">http://192.168.219.152:445</a>
+    </div>
+    <div class="card">
+      <div>MySpeed</div>
+      <a href="http://192.168.219.152:5216" target="_blank">http://192.168.219.152:5216</a>
+    </div>
+    <div class="card">
+      <div>metube</div>
+      <a href="http://192.168.219.152:8081" target="_blank">http://192.168.219.152:8081</a>
+    </div>
+    <div class="card">
+      <div>File-Browser</div>
+      <a href="http://192.168.219.152:8147" target="_blank">http://192.168.219.152:8147</a>
+    </div>
+    <div class="card">
+      <div>portainer</div>
+      <a href="http://192.168.219.152:8000" target="_blank">http://192.168.219.152:8000</a>
+    </div>
+  </div>
+</body>
+</html>
