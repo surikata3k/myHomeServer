@@ -1,0 +1,10 @@
+name: filebrowser
+services:
+  filebrowser:
+    container_name: File-Browser
+    image: filebrowser/filebrowser
+    restart: on-failure:5
+    ports:
+      - 8147:80
+    volumes:
+      - /server:/srv

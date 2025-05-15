@@ -1,6 +1,8 @@
-# Install docker
+# Install myHomeServer
 
 ```
-curl -sL https://raw.githubusercontent.com/surikata3k/myHomeServer/refs/heads/main/01_docker.sh | bash
+git clone https://github.com/surikata3k/myHomeServer.git
+cd myHomeServer
+sh install.sh
 ```
 
