@@ -18,6 +18,6 @@ sudo groupadd docker
 
 sudo usermod -aG docker $USER
 
-newgrp docker
+newgrp docker || true
 
 docker run hello-world
