@@ -1,6 +1,13 @@
 
 
-for FILE in compose/*; 
+for DIR in compose/*/; 
 do 
-    docker compose -f $FILE up -d;
+    if [ -d "$DIR" ]; then
+        for FILE in "$DIR"*.yaml "$DIR"*.yml; 
+        do 
+            if [ -f "$FILE" ]; then
+                docker compose -f "$FILE" up -d;
+            fi
+        done
+    fi
 done
