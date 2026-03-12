@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+ 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeServer | Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <i class="fas fa-server" id="logo" style="font-size:2rem; color:var(--accent-color);"></i>
+            <div id="network-status">Detectant xarxa...</div>
+        </div>
+        <div class="header-center">
+            <h1>HomeServer</h1>
+            <p>Gestió de serveis personals</p>
+        </div>
+        <div class="header-right">
+            <a id="shutdown-btn" class="card" href="#" style="display:inline-block; max-width:240px;">
+                <i class="fas fa-power-off"></i>
+                <h3>Apagar servidor</h3>
+            </a>
+        </div>
+    </header>
+
+
+
+    <div class="container"></div>
+
+
+
+    <!-- server overview box -->
+    <section id="server-overview" class="container" style="margin-bottom:30px;">
+        <!-- will be populated by JavaScript -->
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

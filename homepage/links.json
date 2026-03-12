@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Portainer",
+        "protocol": "https",
+        "port": 9443,
+        "icon": "fas fa-cubes-stacked",
+        "description": "Contenidors Docker"
+    },
+    {
+        "name": "Filegator",
+        "protocol": "http",
+        "port": 8080,
+        "icon": "fas fa-cloud",
+        "description": "Gestor de Fitxers"
+    },
+    {
+        "name": "Metube",
+        "protocol": "http",
+        "port": 8081,
+        "icon": "fas fa-play-circle",
+        "description": "YouTube Downloader"
+    },
+    {
+        "name": "Transmission",
+        "protocol": "http",
+        "port": 9091,
+        "icon": "fas fa-download",
+        "description": "Client Torrent"
+    },
+    {
+        "name": "MySpeed",
+        "protocol": "http",
+        "port": 5216,
+        "icon": "fas fa-gauge-high",
+        "description": "Velocitat de Xarxa"
+    },
+    {
+        "name": "WatchYourLan",
+        "protocol": "http",
+        "port": 8840,
+        "icon": "fas fa-network-wired",
+        "description": "Monitor de Xarxa"
+    },
+    {
+        "name": "MicroBin",
+        "protocol": "http",
+        "port": 8085,
+        "icon": "fas fa-clipboard",
+        "description": "Compartició de Text Segura"
+    },
+    {
+        "name": "Samba",
+        "protocol": "http",
+        "port": 445,
+        "icon": "fas fa-folder-open",
+        "description": "Compartició de Fitxers"
+    }
+]
