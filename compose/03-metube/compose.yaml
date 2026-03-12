@@ -7,4 +7,4 @@ services:
     ports:
       - "8081:8081"
     volumes:
-      - /server/downloads:/downloads
+      - /server/metube:/downloads

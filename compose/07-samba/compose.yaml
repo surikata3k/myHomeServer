@@ -1,14 +1,13 @@
-name: samba
 services:
   samba:
     image: dockurr/samba
     container_name: samba
     environment:
-      NAME: "shared"
+      NAME: "Data"
       USER: "public"
       PASS: "123456"
     ports:
       - 445:445
     volumes:
-      - /server/shared:/storage
+      - /server/files:/storage
     restart: always
